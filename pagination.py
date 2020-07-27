@@ -1,4 +1,13 @@
 class Page(object):
+    """
+    分页模块
+    totle_data: 总的数据量
+    current_page: 当前点击的页码
+    page_url: 每个页面的共同的 url
+    page_count: 在下方要显示的用于分页的个数
+    peer_count: 每个分页要显示的数据量
+    """
+
     def __init__(self, totle_data, current_page, page_url, page_count=7, peer_count=10):
         self.totle_data = totle_data
         self.current_page = current_page
